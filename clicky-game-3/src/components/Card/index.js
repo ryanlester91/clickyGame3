@@ -3,8 +3,10 @@ import "./style.css";
 
 const Card = props => (
   <div className="card">
-    <img alt={props.name} src={props.image} id={props.id}
-    onClick={() => props.shuffleArray(props.id)}></img>
+    <div className="img-container">
+      <img id={props.id} alt={props.name} src={props.image} 
+        onClick={() => props.shuffleArray(props.id)}></img>
+    </div>
   </div>
 )
 /*const Card = ({ id, name, image, pickCharacters }) => (

@@ -17,8 +17,9 @@ class App extends Component {
 
   
 
-  /*shuffleCharacters = () => {
-    this.setState(this.state.characters = this.shuffleArray(this.state.characters))
+  /*handleShuffle = () => {
+    let shuffledCharacters = shuffleArray(characters);
+    this.setState({ characters: shuffledCharacters });
   }*/
 
   shuffleArray = (array) => {
@@ -89,6 +90,7 @@ class App extends Component {
     }
   
 }
+
 
 
   
