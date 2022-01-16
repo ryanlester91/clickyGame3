@@ -2,74 +2,74 @@
     {
         "id": 1,
         "name": "Mihoshi",
-        "image": "../public/images/tenchi_mihoshi.jpg",
+        "image": "../imgs/tenchi_mihoshi.jpg",
         "isClicked": false
     },
     {
         "id": 2,
         "name": "Sasami",
-        "image": "../public/images/tenchi_sasami.jpg",
+        "image": "../imgs/tenchi_sasami.jpg",
         "isClicked": false
         
     },
     {
         "id": 3,
         "name": "Ryoko",
-        "image": "../public/images/tenchi_ryoko.jpg",
+        "image": "../imgs/tenchi_ryoko.jpg",
         "isClicked": false
     },
     {
         "id": 4,
         "name": "Tenchi",
-        "image": "../public/images/tenchi_tenchi-masaki.jpg",
+        "image": "../imgs/tenchi_tenchi-masaki.jpg",
         "isClicked": false
     },
     {
         "id": 5,
         "name": "Ayeka",
-        "image": "../public/images/tenchi_ayeka.jpg",
+        "image": "../imgs/tenchi_ayeka.jpg",
         "isClicked": false
     },
     {
         "id": 6,
         "name": "Ryo-Ohki",
-        "image": "public/images/tenchi_ryo-ohki.jpg",
+        "image": "../imgs/tenchi_ryo-ohki.jpg",
         "isClicked": false
     },
     {
         "id": 7,
         "name": "Washu",
-        "image": "./public/images/tenchi_washu.jpg",
+        "image": "../imgs/tenchi_washu.jpg",
         "isClicked": false
     },
     {
         "id": 8,
         "name": "Kain",
-        "image": "./public/images/tenchi_kain.jpg",
+        "image": "../imgs/tenchi_kain.jpg",
         "isClicked": false
     },
     {
         "id": 9,
         "name": "Achika",
-        "image": "./public/images/tenchi_achika.jpg",
+        "image": "../imgs/tenchi_achika.jpg",
         "isClicked": false
     },
     {
         "id": 10,
         "name": "Kiyone",
-        "image": "./public/images/tenchi_kiyone.jpg",
+        "image": "../imgs/tenchi_kiyone.jpg",
         "isClicked": false
     },
     {
         "id": 11,
         "name": "Tsunami",
-        "image": "../public/images/tenchi_tsunami.jpg",
+        "image": "../imgs/tenchi_tsunami.jpg",
         "isClicked": false
     },
     {
         "id": 12,
         "name": "Kagato",
-        "image": "../public/images/tenchi_kagato.jpg",
+        "image": "../imgs/tenchi_kagato.jpg",
         "isClicked": false
     }
 

@@ -16,23 +16,51 @@ class App extends Component {
   }
 
   
+  
 
   /*handleShuffle = () => {
     let shuffledCharacters = shuffleArray(characters);
     this.setState({ characters: shuffledCharacters });
   }*/
 
-  shuffleArray = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
+  shuffleArray = (characters) => {
+    for (let i = characters.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      let x = array[i];
-      array[i] = array[j];
-      array[j] = x;
+      let x = characters[i];
+      characters[i] = characters[j];
+      characters[j] = x;
     }
-    return array;
+    return characters;
   }
 
-  pickCharacter = id => {
+    /*shuffleCard(id) {
+      let pickedCharacters = this.state.pickedCharacters;
+
+      if(pickedCharacters.includes(id)){
+        this.setState({ pickedCharacters: [], score: 0, alertMessage:  "Game Over! You lost. Click to play again!" });
+        return;
+      }else{
+        pickedCharacters.push(id)
+    }
+
+    if(pickedCharacters.length === 8){
+      this.setState({score: 8, status: "You Won!", pickedCharacters: []});
+      console.log('You Win');
+      return;
+    }
+
+    this.setState({ characters, pickedCharacters , score: pickedCharacters.length, status: " Tenchi Muyo " });
+
+    for (let i = characters.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      let x = characters[i];
+      characters[i] = characters[j];
+      characters[j] = x;
+    }
+  
+  }*/
+    pickCharacter = id => {
+    this.handleShuffle();
     let pickedCharacters = this.state.pickedCharacters;
     let score = this.state.score;
     let topScore = this.state.topScore;
@@ -43,6 +71,7 @@ class App extends Component {
 
         //reshuffle after each click
         this.shuffleArray();
+        //this.state.pickedCharacters.sort( () => Math.random() - 0.5);
         break;
 
       case this.state.score === 12:
@@ -88,8 +117,8 @@ class App extends Component {
         topScore: score 
       });
     }
-  
-}
+  }
+    
 
 
 
@@ -104,7 +133,7 @@ render() {
               key={character.id}
               name={character.name}
               image={character.image}
-              pickCharacter ={this.pickCharacter} 
+              pickCharacter ={this.pickCharacter}
               />
         
       ))}
