@@ -18,10 +18,10 @@ class App extends Component {
   
   
 
-  /*handleShuffle = () => {
-    let shuffledCharacters = shuffleArray(characters);
+  handleShuffle = () => {
+    let shuffledCharacters = this.shuffleArray(this.state.characters);
     this.setState({ characters: shuffledCharacters });
-  }*/
+  }
 
   shuffleArray = (characters) => {
     for (let i = characters.length - 1; i > 0; i--) {
@@ -30,7 +30,8 @@ class App extends Component {
       characters[i] = characters[j];
       characters[j] = x;
     }
-    return characters;
+    return characters
+   
   }
 
     /*shuffleCard(id) {

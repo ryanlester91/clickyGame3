@@ -5,7 +5,7 @@ const Card = props => (
   <div className="card">
     <div className="img-container">
       <img id={props.id} alt={props.name} src={props.image} 
-        onClick={() => props.shuffleArray(props.id)}></img>
+        onClick={() => props.pickCharacter(props.id)}></img>
     </div>
   </div>
 )
